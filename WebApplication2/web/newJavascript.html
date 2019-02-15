@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>New Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0">
+        <script>
+            function onMouseClick(name){
+                alert('Hola a todos!! ' + name);
+                var a=15;
+                var b= 10;
+                var c= a + b;
+                alert('a: '+a);
+            }
+            
+            function addNumber(){
+                var num1= document.getElementById("num1").value;
+                num1: parseInt(num1);
+                var num2= document.getElementById("num2").value;
+                num1: parseInt(num2);
+                var result = num1 + num2;
+                result = result * 2;
+                doument.getElementById("result").value = result;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h1>New Javascript</h1>
+        <br>
+        <button onclick="onMouseClick('Ale')">Click me</button>
+        <br><br>
+        
+        Number1: <input type="number" id="num1" />
+        <br><br>
+        Number2: <input type="number" id="num2" />
+        <br><br>
+        Result: <input type="number" id="result" />
+        <br><br>
+        <button onclick="addNumber()">Add</button>
+    </body>
+</html>
